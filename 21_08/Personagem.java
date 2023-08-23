@@ -28,6 +28,6 @@ public class Personagem {
 
     @Override
     public String toString(){
-        return "vidas: " +vidas+ "/npoder: " +poder+ "/nvisibilidade: " +visibilidade;
+        return "vidas: " +vidas+ "\npoder: " +poder+ "\nvisibilidade: " +visibilidade+"\n";
     }
 }
