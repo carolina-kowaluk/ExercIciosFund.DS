@@ -10,19 +10,24 @@ public class Personagem {
         this.visibilidade = visibilidade;
     }
 
-    public Personagem normal(){
+    public static Personagem normal(){
         return new Personagem(10, 50, 3);
     }
 
-    public Personagem poderoso(int poder){
+    public static Personagem poderoso(int poder){
         return new Personagem(10, poder, 3);
     }
 
-    public Personagem soturno(int visibilidade){
+    public static Personagem soturno(int visibilidade){
         return new Personagem(visibilidade, 50, 3);
     }
 
-    public Personagem custom(int visibilidade, int poder, int vidas){
+    public static Personagem custom(int visibilidade, int poder, int vidas){
         return new Personagem(visibilidade, poder, vidas);
+    }
+
+    @Override
+    public String toString(){
+        return "vidas: " +vidas+ "/npoder: " +poder+ "/nvisibilidade: " +visibilidade;
     }
 }
