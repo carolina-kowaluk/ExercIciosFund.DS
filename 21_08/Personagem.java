@@ -15,10 +15,16 @@ public class Personagem {
     }
 
     public static Personagem poderoso(int poder){
+        if(poder > 100) return new Personagem(10, 100, 3);
+        if(poder < 0) return new Personagem(10, 0, 3);
+        
         return new Personagem(10, poder, 3);
     }
 
     public static Personagem soturno(int visibilidade){
+        if(visibilidade > 10) return new Personagem(10, 50, 3);
+        if(visibilidade < 0) return new Personagem(0, 50, 3);
+
         return new Personagem(visibilidade, 50, 3);
     }
 
